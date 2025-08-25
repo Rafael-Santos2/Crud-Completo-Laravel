@@ -60,16 +60,21 @@ a.btn-link{
     font-weight: bold;
 }
 
-#password, #email{
+#password, #email, #name{
     min-width: 400px;
     height: 40px;
     padding: 0.5rem;
     border: 1px solid #000000;
     border-radius: 5px;
-    background: #c0c0c0;
+    background: #dedede;
     cursor: pointer;
 }
 
-#password:hover, #email:hover{
-    background: #e3e3e3;
+#password:hover, #email:hover, #name:hover{
+    background: #9e9e9e;
+}
+
+#password:focus, #email:focus, #name:focus{
+    border: 2px solid #353654;
+    outline: none;
 }

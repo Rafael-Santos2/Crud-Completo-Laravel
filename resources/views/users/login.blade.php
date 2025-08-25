@@ -43,11 +43,11 @@
                 <input type="password" name="fakepasswordremembered" style="display:none">
                 <div class="mb-2">
                     <label for="email" class="form-label">Email</label>
-                    <input id="email" class="form-control" type="email" name="email" value="{{ old('email') }}" required autocomplete="username">
+                    <input id="email" class="form-control" type="email" name="email" value="{{ old('email') }}" required autocomplete="username" placeholder="I">
                 </div>
                 <div class="mb-2">
                     <label for="password" class="form-label">Senha</label>
-                    <input id="password" class="form-control" type="password" name="password" required autocomplete="current-password">
+                    <input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" placeholder="Insira a sua senha">
                     <!-- botao de esqueci a senha -->
                     <a href="{{ route('password.request') }}" class="btn btn-link">Esqueci minha senha</a>
                 </div>
