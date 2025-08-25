@@ -9,16 +9,21 @@
     <title>Crud completo</title>
     <!-- link favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.png') }}">
+
+    <style>
+        
+        
+    </style>
 </head>
 <body>
     <header>
         <h1>Crud completo</h1>
     </header>
     <main>
-        <div class="main-container">
+        <div class="main-container cont">
             <img src="{{ asset('assets/logo.jpg') }}" alt="Logo principal">
-            <h4>Bem-vindo ao sistema de CRUD completo!</h4>
-            <h5>Entre ou Cadastre-se</h5>
+            <h4 class="mt-4">Bem-vindo ao sistema de CRUD completo!</h4>
+            <h5 class="mt-4">Entre ou Cadastre-se</h5>
             <div class="auth-links">
                 <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
                 <a href="{{ route('users.create') }}" class="btn btn-secondary">Cadastrar</a>
@@ -26,7 +31,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Crud completo. Todos os direitos reservados.</p>
+        <p class="mt-3">&copy; 2025 Crud completo. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
