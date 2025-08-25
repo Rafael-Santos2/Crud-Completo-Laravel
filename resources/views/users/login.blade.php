@@ -31,10 +31,10 @@
                 echo '</div>';
             }
             if ($errors->has('email')) {
-                echo '<div class="alert alert-danger">' . $errors->first('email') . '</div>';
+                echo '<div class="alert alert-danger">'. $errors->first('email') . '</div>';
             }
             if ($errors->has('password')) {
-                echo '<div class="alert alert-danger">' . $errors->first('password') . '</div>';
+                echo '<div class="alert alert-danger">'. $errors->first('password') . '</div>';
             }
             ?>
             <form id="loginForm" action="{{ route('login') }}" method="POST" autocomplete="off" novalidate>

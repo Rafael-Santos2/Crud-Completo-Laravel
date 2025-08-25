@@ -23,7 +23,7 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('password/reset', [ResetPasswordController::class, 'showEditForm'])->name('password.request');
 Route::post('password/reset', [ResetPasswordController::class, 'update'])->name('password.update');
 
-// Rotas protegidas (só quem está logado acessa)
+// Rotas protegidas (só quem está logado consegue ter acesso)
 Route::middleware('auth')->group(function () {
     Route::resource('users', UserController::class)->except(['create', 'store']);
 });
